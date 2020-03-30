@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Udit Narayan</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Udit Narayan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Theorem in Number Theory</title>
+      <link>http://localhost:1313/number_theory/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/number_theory/</guid>
+      <description>For positive integers \(a,b\) where \(gcd(a,b) = 1\), the equation \(ax + by = n\) always has a solution in positive \(x,y\) for all \(n \geq ab\) \
+Proof
+Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know that there always exists solutions (infinitely many of them) for \(ax + by = n\). However we are only interested in the ones where both \(x\) and \(y\) are positive.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>Student from Vizag, India who is very interested in Mathematics. On this blog, I will share elegant math problems and proofs. I also make telegram bots. You can check them out here :  csgo-bot maki-management-bot  Site made using Hugo</description>
+    </item>
+    
+  </channel>
+</rss>
