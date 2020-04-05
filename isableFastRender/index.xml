@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>The Math behind a Calendar</title>
+      <link>http://localhost:1313/calendar/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/calendar/</guid>
+      <description>Backstory We all know that the earth takes 365 days to complete one revolution around the sun&amp;hellip;or does it? Well, not quite. It takes approximately 365.2422 days. The early Julian Calendar (introduced by Julius Caesar) rounded off the decimal to one-fourths which accumulated to a day once every four years. Hence a day was added to every year (in February as I&amp;rsquo;m sure you know) once in four years. This year was termed a leap year.</description>
+    </item>
+    
+    <item>
       <title>The Power of Pigeonhole Principle - 1</title>
       <link>http://localhost:1313/php2/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
@@ -48,15 +57,6 @@ Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know t
       
       <guid>http://localhost:1313/about/</guid>
       <description>High school student from Vizag, India who is very interested in Mathematics. On this blog, I will share elegant math problems and proofs. Currently I am interested in Number theory, Functions and Polynomials. I also make telegram bots. You can check them out here :  csgo-bot maki-management-bot  Site made using Hugo</description>
-    </item>
-    
-    <item>
-      <title>The Math behind a Calendar</title>
-      <link>http://localhost:1313/calendar/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/calendar/</guid>
-      <description>Backstory We all know that the earth takes 365 days to complete one revolution around the sun&amp;hellip;or does it? Well, not quite. It takes approximately 365.2422 days. The early Julian Calendar (introduced by Julius Caesar) rounded off the decimal to one-fourths which accumulated to a day once every four years. Hence a day was added to every year (in Febuary as I&amp;rsquo;m sure you know) once in four years. This year was termed a leap year.</description>
     </item>
     
   </channel>
