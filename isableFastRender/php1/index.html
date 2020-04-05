@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
-    <title>A Theorem in Number Theory // Udit Narayan</title>
+    <title>The Pigeonhole Principle // Udit Narayan</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.68.3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,17 +11,17 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="A Theorem in Number Theory"/>
-<meta name="twitter:description" content="For positive integers \(a,b\) where \(gcd(a,b) = 1\), the equation \(ax &#43; by = n\) always has a solution in positive \(x,y\) for all \(n \geq ab\) Proof
-Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know that there always exists solutions (infinitely many of them) for \(ax &#43; by = n\). However we are only interested in the ones where both \(x\) and \(y\) are positive."/>
+<meta name="twitter:title" content="The Pigeonhole Principle"/>
+<meta name="twitter:description" content="The Pigeonhole Principle (or the Box Principle) looks obvious and straightforward on first glance but it has a very widespread application. It shows itself in the most unexpected of places and the proofs involving it are striking examples of mathematical elegance.
+So what is this principle? In this post, I&rsquo;ll write about a version of this principle which I find more intuitive. Here you have a certain number of pigeons which you must place inside a certain number of holes."/>
 
-    <meta property="og:title" content="A Theorem in Number Theory" />
-<meta property="og:description" content="For positive integers \(a,b\) where \(gcd(a,b) = 1\), the equation \(ax &#43; by = n\) always has a solution in positive \(x,y\) for all \(n \geq ab\) Proof
-Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know that there always exists solutions (infinitely many of them) for \(ax &#43; by = n\). However we are only interested in the ones where both \(x\) and \(y\) are positive." />
+    <meta property="og:title" content="The Pigeonhole Principle" />
+<meta property="og:description" content="The Pigeonhole Principle (or the Box Principle) looks obvious and straightforward on first glance but it has a very widespread application. It shows itself in the most unexpected of places and the proofs involving it are striking examples of mathematical elegance.
+So what is this principle? In this post, I&rsquo;ll write about a version of this principle which I find more intuitive. Here you have a certain number of pigeons which you must place inside a certain number of holes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/number_theory/" />
-<meta property="article:published_time" content="2020-03-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-03-28T00:00:00+00:00" />
+<meta property="og:url" content="http://localhost:1313/php1/" />
+<meta property="article:published_time" content="2020-03-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-29T00:00:00+00:00" />
 
 
 
@@ -61,14 +61,14 @@ Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know t
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">A Theorem in Number Theory</h1>
+      <h1 class ="post-title">The Pigeonhole Principle</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
   <title>calendar</title>
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
 </svg>
-          Mar 28, 2020
+          Mar 29, 2020
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
@@ -79,31 +79,19 @@ Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know t
         </div></div>
     </header>
     <div class="post-content">
-      <h3 id="for-positive-integers-ab-where-gcdab--1-the-equation-ax--by--n-always-has-a-solution-in-positive-xy-for-all-n-geq-ab">For positive integers \(a,b\) where \(gcd(a,b) = 1\), the equation \(ax + by = n\) always has a solution in positive \(x,y\) for all \(n \geq ab\)</h3>
+      <p><strong>The Pigeonhole Principle (or the Box Principle)</strong> looks obvious and straightforward on first glance but it has a very widespread application. It shows itself in the most unexpected of places and the proofs involving it are striking examples of mathematical elegance.<br>
+So what is this principle? In this post, I&rsquo;ll write about a version of this principle which I find more intuitive. Here you have a certain number of pigeons which you must place inside a certain number of holes.</p>
+<p><strong>Statement - 1</strong> : If there are \(n\) pigeons and \(k\) holes, where \(n&gt;k\), then one hole must have at least 2 pigeons.</p>
+<p><strong>Statement - 2</strong> : If there are \(n\) pigeons and \(k\) holes, then one hole must have at least \([\frac{n}{k}]+1\) pigeons if \(n/k\) is not an integer, other wise the number is simply \([\frac{n}{k}]\)</p>
+<p>(Note : here \([.]\) implies the greatest integer function)</p>
+<p>Statement - 1 is rather obvious but it gives rise to Statement - 2, which might also be considered &lsquo;intuitive&rsquo;. However intuition has no place in mathematics. We must formally prove it.</p>
 <p><strong>Proof</strong></p>
-<p>Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know that there always exists solutions (infinitely many of them) for \(ax + by = n\). However we are only interested in the ones where both \(x\) and \(y\) are positive.</p>
-<p>\(ax + by = n\)<br>
-Let \(n = ak + r\) where \(r&lt;a\)<br>
-\(ax + by = ak + r\)<br>
-Set \(x = k - t\) where \(t\) takes integral values from \(1\) to \(b\)<br>
-\(\implies a(k - t) + by = ak + r\)<br>
-\(\implies - at + by = r\)<br>
-Let \(r = 0\)<br>
-\(\implies by = at\)<br>
-\(\implies b|at\)<br>
-\(\implies b|t\) (since \(gcd(a,b) = 1\)<br>
-\(\therefore t_{max} = b\)</p>
-<p>Now lets consider the arbitrary case. We must prove that \(-at + by = r\) has a solution \(t\) in \([1,b]\)
-Here we employ the theory of Diophantine equations.<br>
-All the solutions to the above equation are \((t_0 + (b)d, y_0 + (a)d)\) where \((t_0, y_0)\) is an arbitrary solution of the same equation and \(d\) is any integer.<br>
-We notice that the sequence of \(t\)&lsquo;s follow an arithmetic progression with common difference b. Hence there always exists a \(t\) between \(1\) and \(b\).<br>
-The corresponding \(y\) is also positive as \(by = at + r\).</p>
-<p>However in order for \(x\) to be positive, the minimum value of \(k-t\) must be positive.<br>
-\(\implies k-b\geq 0\)<br>
-\(\implies k\geq b\)</p>
-<p>Since \(n = ak + r\).<br>
-For \(n \geq ab\) we always have a positive solution in \(x,y\).</p>
-<p>Remark : This has been proved for all \(n &gt; ab-a-b\) but this proof is rather elementary compared to that and this result is still quite powerful.</p>
+<p>We prove it by the method of contradiction. We assume the contrary, that is, every hole has at most \([\frac{n}{k}]\) pigeons.</p>
+<p>Now the maximum number of pigeons = \(k[\frac{n}{k}] \leq k(\frac{n}{k}) = n\)<br>
+This can be recast as : maximum number of pigeons \(\leq n\)</p>
+<p>However we must have \(n\) pigeons. Hence the equality must be true. We can see that the equality is true only under the special condition that  \([\frac{n}{k}] = \frac{n}{k}\), that is, \(n/k \in \mathbb{Z}\).  If we assume that \(n/k\) is not an integer (as specified in the first case of Statement -2), we reach a contradiction. Hence our initial assumption is wrong and one hole must contain at least \([\frac{n}{k}]+1\) pigeons</p>
+<p>The second case, \(n/k = q\) is an integer can be solved by assuming all holes have at most \([\frac{n}{k}] -1\) pigeons and reaching a contradiction. This follows a similar procedure and will not shown here.</p>
+<p>The Pigeonhole Principle has brilliant applications in various problems which I&rsquo;ll discuss in upcoming posts.</p>
 
     </div>
     <div class="post-footer">

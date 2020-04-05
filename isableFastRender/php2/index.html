@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+    <title>The Power of Pigeonhole Principle - 1 // Udit Narayan</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Udit" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://localhost:1313/css/main.min.edc866162a0c1d7fb06bf4931a94a7b7311311fae934b34f7d0bb1ee8a506b0a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Power of Pigeonhole Principle - 1"/>
+<meta name="twitter:description" content="In this post, I&rsquo;ll discuss a couple examples where Pigeonhole principle is employed. In case you don&rsquo;t know what the Pigeonhole principle is, you can read my post on it. Here is the link.
+The Friendship Theorem Among six people, there are always three who know each other or three who are complete strangers.
+How can one establish such a statement using mathematics? It almost sounds preposterous! Here we use another concept well known to us but appears to be unrelated - Geometry."/>
+
+    <meta property="og:title" content="The Power of Pigeonhole Principle - 1" />
+<meta property="og:description" content="In this post, I&rsquo;ll discuss a couple examples where Pigeonhole principle is employed. In case you don&rsquo;t know what the Pigeonhole principle is, you can read my post on it. Here is the link.
+The Friendship Theorem Among six people, there are always three who know each other or three who are complete strangers.
+How can one establish such a statement using mathematics? It almost sounds preposterous! Here we use another concept well known to us but appears to be unrelated - Geometry." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/php2/" />
+<meta property="article:published_time" content="2020-03-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-30T00:00:00+00:00" />
+
+
+
+    
+    <html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Katex 0.11.1</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+</html>
+    
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/avatar.jpg" alt="Udit" /></a>
+      <h1>Udit Narayan</h1>
+      <p>Math learner</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/Isocyanide" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://t.me/WeirdIndianBoi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">The Power of Pigeonhole Principle - 1</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 30, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>In this post, I&rsquo;ll discuss a couple examples where Pigeonhole principle is employed. In case you don&rsquo;t know what the Pigeonhole principle is, you can read my post on it. <a href="https://isocyanide.github.io/php1/">Here</a> is the link.</p>
+<h3 id="the-friendship-theorem">The Friendship Theorem</h3>
+<p><em>Among six people, there are always three who know each other or three who are complete strangers.</em></p>
+<p>How can one establish such a statement using mathematics? It almost sounds preposterous! Here we use another concept well known to us but appears to be unrelated - Geometry. Consider a hexagon where every vertex \(A,B,C,D,E,F\) denotes a person. Now we join all the vertices by either a red line or a blue line. Two points joined by a red line implies that the two people represented by the points are strangers while the blue line represents friends (or simply people who know each other).</p>
+<p>Lets start with person A. There are \(5\) lines leading away from A which can be either red or blue. This is where the Pigeonhole principle kicks in. Let &lsquo;red&rsquo; and &lsquo;blue&rsquo; be holes and the \(5\) lines be pigeons. Since \(\frac{n}{k} = \frac{5}{3}\) is not an integer, one of the holes has at least \([\frac{n}{k}] + 1 = 3\) lines. Without loss of generality, let the three lines be blue.</p>
+<p><img src="/hexagon.jpg#center" alt="hexagon"></p>
+<p>Now if any one of \(CD\) or \(DE\) or \(CE\) is blue, we have a blue triangle implying the existence of \(3\) people who know each other mutually. Otherwise if \(CD\), \(DE\) and \(CE\) are all red, we have a red triangle \(CED\) implying the existence of \(3\) people who are mutually strangers. The statement has been proved.</p>
+<h3 id="a-geometrical-problem">A Geometrical Problem</h3>
+<p><em>If a disk of radius one contains seven points with mutual distance \(\geq 1.\) Prove that one of the points is the center of the disk.</em></p>
+<p>You might be wondering - where are the holes? Well, we make our own holes!</p>
+<p><img src="/circle.jpg#center" alt="circle"></p>
+<p>Each one of the \(6\) partitions is a &lsquo;hole&rsquo; while the \(7\) points are &lsquo;pigeons&rsquo;. So one of the parition contains at least \([\frac{7}{6}] + 1 = 2\) points. However this is impossible. Let the two points be  \(P\) and \(Q\). Since they are inside the partition, the angle between them \( \angle POQ &lt; 60^{\degree}\) and \(OP\) and \(OQ \leq\) radius \(=1\) (\(O\) being the centre of the cirlce). By the cosine rule, it is easy to verify \(PQ &lt; 1\) which violates the given condition.
+The only other alternative is to have one of the points as centre and indeed if we place the rest \(6\) points at a separation of \(60^{\degree}\) on the circumference, we are left with the situation described in the question.</p>
+<p>After a little experience, identifying questions which require the pigeonhole principle becomes quite easy. The idea of dividing a geometrical shape to accommodate the points is a powerful technique and the key to a lot of problems.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
