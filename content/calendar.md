@@ -8,7 +8,10 @@ math = true
 
 We all know that the earth takes 365 days to complete one revolution around the sun...or does it? Well, not quite. It takes approximately 365.2422 days. The early Julian Calendar (introduced by Julius Caesar) rounded off the decimal to one-fourths which accumulated to a day once every four years. Hence a day was added to every year (in February as I'm sure you know) once in four years. This year was termed a leap year.
 
-However this was still not accurate enough. The minor approximation meant that every 128 years, we lost a day. By the 16th century, 10 days were lost which meant that the Easter festival was celebrated at the wrong astronomical time. Pope Gregory XIII rectified this by introducing a new calendar and having 10 days omitted in the year 1582 - October 5 - October 15. For the coming years, the inaccuracy was fixed by the following scheme : Only the century years (years ending with 00) which are divisible by 400 are considered leap years.
+However this was still not accurate enough. The minor approximation meant that every 128 years, we lost a day. By the 16th century, 10 days were lost which meant that the Easter festival was celebrated at the wrong astronomical time. Pope Gregory XIII rectified this by introducing a new calendar and having 10 days omitted in the year 1582 - October 5 - October 15. For the coming years, the inaccuracy was fixed by the following scheme : Out of the century years (years ending with 00) only those which are divisible by 400 are considered leap years. In short - 
+
+* Years divisible by 4 but not by 100 are leap years
+* Years divisble by 100 are leap years only if they are divisbly by 400
 
 ### The Math Part
 

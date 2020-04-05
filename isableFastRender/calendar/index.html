@@ -79,7 +79,11 @@
     <div class="post-content">
       <h3 id="backstory">Backstory</h3>
 <p>We all know that the earth takes 365 days to complete one revolution around the sun&hellip;or does it? Well, not quite. It takes approximately 365.2422 days. The early Julian Calendar (introduced by Julius Caesar) rounded off the decimal to one-fourths which accumulated to a day once every four years. Hence a day was added to every year (in February as I&rsquo;m sure you know) once in four years. This year was termed a leap year.</p>
-<p>However this was still not accurate enough. The minor approximation meant that every 128 years, we lost a day. By the 16th century, 10 days were lost which meant that the Easter festival was celebrated at the wrong astronomical time. Pope Gregory XIII rectified this by introducing a new calendar and having 10 days omitted in the year 1582 - October 5 - October 15. For the coming years, the inaccuracy was fixed by the following scheme : Only the century years (years ending with 00) which are divisible by 400 are considered leap years.</p>
+<p>However this was still not accurate enough. The minor approximation meant that every 128 years, we lost a day. By the 16th century, 10 days were lost which meant that the Easter festival was celebrated at the wrong astronomical time. Pope Gregory XIII rectified this by introducing a new calendar and having 10 days omitted in the year 1582 - October 5 - October 15. For the coming years, the inaccuracy was fixed by the following scheme : Out of the century years (years ending with 00) only those which are divisible by 400 are considered leap years. In short -</p>
+<ul>
+<li>Years divisible by 4 but not by 100 are leap years</li>
+<li>Years divisble by 100 are leap years only if they are divisbly by 400</li>
+</ul>
 <h3 id="the-math-part">The Math Part</h3>
 <p>(Note \(a \equiv b \ (mod \ n)\) implies \(b\) is the remainder when \(a\) is divided by \(n\))</p>
 <p>Our goal is to determine which day a particular date after 16th century falls on the Gregorian Calendar. For convenience we assign numbers to the days of the week. Sun - 0, Mon - 1 and so on till Sat - 6.<br>
