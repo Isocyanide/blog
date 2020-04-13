@@ -5,7 +5,7 @@ paginate = 8
 
 [params]
   author = "Udit"
-  description = "Math learner"
+  description = "I am a high-school student interested in Math."
  
   [[params.social]]
     name = "github"
