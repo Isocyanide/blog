@@ -1,6 +1,6 @@
 +++
 title = "About"
-date = "2014-04-09"
+date = "2020-03-28"
 +++
 
 #### High school student from Vizag, India who is very interested in Mathematics. On this blog, I will share elegant math problems and proofs. Currently I am interested in Number theory, Functions and Polynomials.
