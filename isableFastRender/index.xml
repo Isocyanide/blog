@@ -5,10 +5,31 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Udit Narayan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Different Approach to Quadratic Equations</title>
+      <link>http://localhost:1313/quadratic_equation/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/quadratic_equation/</guid>
+      <description>In this post, I&amp;rsquo;ll discuss a cool and innovative approach to quadratic equations. I&amp;rsquo;m sure all of you are familiar with the dreadful quadratic equation. I&amp;rsquo;m sure most of you remember it as well but of course, it&amp;rsquo;s a pain in the arse. Have you ever wished there was an easier way without all the memorisation? Well, your wish has come true!
+Consider a quadratic equation :
+$$ x^2 + ax + b = 0$$</description>
+    </item>
+    
+    <item>
+      <title>The Chinese Remainder Theorem</title>
+      <link>http://localhost:1313/chinese_remainder_theorem/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/chinese_remainder_theorem/</guid>
+      <description>This is a famous theorem in elementary number theory which is suited to answer a specific type of question whose first appearance was seen in Chinese literature, and hence the name Chinese Remainder Theorem. The question asks - &amp;ldquo;Find the positive integers which give remainders \(a_1, a_2, a_3, a_4\) when divided by \(n_1, n_2, n_3, n_4\) respectively.&amp;rdquo; We first derive the mathematical tools required to tackle the problem.
+Linear Congruences As the name suggests, we deal with congruences such as \(ax \equiv b \ (mod \ n) \).</description>
+    </item>
     
     <item>
       <title>The Math behind a Calendar</title>
@@ -53,7 +74,7 @@ Since \(gcd(a,b) = 1\), by the theory of linear Diophantine equations, we know t
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
       <description>High school student from Vizag, India who is very interested in Mathematics. On this blog, I will share elegant math problems and proofs. Currently I am interested in Number theory, Functions and Polynomials. I also make telegram bots. You can check them out here :  csgo-bot maki-management-bot  Site made using Hugo</description>

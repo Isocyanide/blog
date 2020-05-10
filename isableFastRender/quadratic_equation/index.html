@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
-    <title>The Pigeonhole Principle // Udit Narayan</title>
+    <title>A Different Approach to Quadratic Equations // Udit Narayan</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.68.3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,17 +11,19 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Pigeonhole Principle"/>
-<meta name="twitter:description" content="The Pigeonhole Principle (or the Box Principle) looks obvious and straightforward on first glance but it has a very widespread application. It shows itself in the most unexpected of places and the proofs involving it are striking examples of mathematical elegance.
-So what is this principle? In this post, I&rsquo;ll write about a version of this principle which I find more intuitive. Here you have a certain number of pigeons which you must place inside a certain number of holes."/>
+<meta name="twitter:title" content="A Different Approach to Quadratic Equations"/>
+<meta name="twitter:description" content="In this post, I&rsquo;ll discuss a cool and innovative approach to quadratic equations. I&rsquo;m sure all of you are familiar with the dreadful quadratic equation. I&rsquo;m sure most of you remember it as well but of course, it&rsquo;s a pain in the arse. Have you ever wished there was an easier way without all the memorisation? Well, your wish has come true!
+Consider a quadratic equation :
+$$ x^2 &#43; ax &#43; b = 0$$"/>
 
-    <meta property="og:title" content="The Pigeonhole Principle" />
-<meta property="og:description" content="The Pigeonhole Principle (or the Box Principle) looks obvious and straightforward on first glance but it has a very widespread application. It shows itself in the most unexpected of places and the proofs involving it are striking examples of mathematical elegance.
-So what is this principle? In this post, I&rsquo;ll write about a version of this principle which I find more intuitive. Here you have a certain number of pigeons which you must place inside a certain number of holes." />
+    <meta property="og:title" content="A Different Approach to Quadratic Equations" />
+<meta property="og:description" content="In this post, I&rsquo;ll discuss a cool and innovative approach to quadratic equations. I&rsquo;m sure all of you are familiar with the dreadful quadratic equation. I&rsquo;m sure most of you remember it as well but of course, it&rsquo;s a pain in the arse. Have you ever wished there was an easier way without all the memorisation? Well, your wish has come true!
+Consider a quadratic equation :
+$$ x^2 &#43; ax &#43; b = 0$$" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/php1/" />
-<meta property="article:published_time" content="2020-03-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-03-29T00:00:00+00:00" />
+<meta property="og:url" content="http://localhost:1313/quadratic_equation/" />
+<meta property="article:published_time" content="2020-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-20T00:00:00+00:00" />
 
 
 
@@ -61,14 +63,14 @@ So what is this principle? In this post, I&rsquo;ll write about a version of thi
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">The Pigeonhole Principle</h1>
+      <h1 class ="post-title">A Different Approach to Quadratic Equations</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
   <title>calendar</title>
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
 </svg>
-          Mar 29, 2020
+          Apr 20, 2020
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
@@ -79,19 +81,28 @@ So what is this principle? In this post, I&rsquo;ll write about a version of thi
         </div></div>
     </header>
     <div class="post-content">
-      <p><strong>The Pigeonhole Principle (or the Box Principle)</strong> looks obvious and straightforward on first glance but it has a very widespread application. It shows itself in the most unexpected of places and the proofs involving it are striking examples of mathematical elegance.<br>
-So what is this principle? In this post, I&rsquo;ll write about a version of this principle which I find more intuitive. Here you have a certain number of pigeons which you must place inside a certain number of holes.</p>
-<p><strong>Statement - 1</strong> : If there are \(n\) pigeons and \(k\) holes, where \(n&gt;k\), then one hole must have at least 2 pigeons.</p>
-<p><strong>Statement - 2</strong> : If there are \(n\) pigeons and \(k\) holes, then one hole must have at least \([\frac{n}{k}]+1\) pigeons if \(n/k\) is not an integer, other wise the number is simply \([\frac{n}{k}]\)</p>
-<p>(Note : here \([.]\) implies the greatest integer function)</p>
-<p>Statement - 1 is rather obvious but it gives rise to Statement - 2, which might also be considered &lsquo;intuitive&rsquo;. However intuition has no place in mathematics. We must formally prove it.</p>
-<p><strong>Proof</strong></p>
-<p>We prove it by the method of contradiction. We assume the contrary, that is, every hole has at most \([\frac{n}{k}]\) pigeons.</p>
-<p>Now the maximum number of pigeons = \(k[\frac{n}{k}] \leq k(\frac{n}{k}) = n\)<br>
-This can be recast as : maximum number of pigeons \(\leq n\)</p>
-<p>However we must have \(n\) pigeons. Hence the equality must be true. We can see that the equality is true only under the special condition that  \([\frac{n}{k}] = \frac{n}{k}\), that is, \(n/k \in \mathbb{Z}\).  If we assume that \(n/k\) is not an integer (as specified in the first case of Statement -2), we reach a contradiction. Hence our initial assumption is wrong and one hole must contain at least \([\frac{n}{k}]+1\) pigeons</p>
-<p>The second case, \(n/k = q\) is an integer can be solved by assuming all holes have at most \([\frac{n}{k}] -1\) pigeons and reaching a contradiction. This follows a similar procedure and will not shown here.</p>
-<p>The Pigeonhole Principle has brilliant applications in various problems which I&rsquo;ll discuss in upcoming posts.</p>
+      <p>In this post, I&rsquo;ll discuss a cool and innovative approach to quadratic equations. I&rsquo;m sure all of you are familiar with the dreadful quadratic equation. I&rsquo;m sure most of you remember it as well but of course, it&rsquo;s a pain in the arse. Have you ever wished there was an easier way without all the memorisation? Well, your wish has come true!</p>
+<p>Consider a quadratic equation :</p>
+<p>$$    x^2 + ax + b = 0$$</p>
+<p>Let \(\alpha\) and \(\beta\) be the roots. We know that \(\alpha + \beta = -a\) and \(\alpha*\beta = b\) 
+Now assign :</p>
+<p>$$    d = \frac{\alpha + \beta}{2} = -\frac{a}{2}$$</p>
+<p>\(d\) is the average of both of the roots and hence the roots are equidistant from this value. In other words,</p>
+<p>$$   \alpha = d + x, \ \beta = d - x$$</p>
+<p>For some real number \(x\). Since \(d\) is a known value, the task boils down to finding \(x\). On employing the second condition, our answer is a single calculation away.</p>
+<p>$$   \alpha*\beta = b $$
+$$   (d+x)(d-x) = b $$
+$$  d^2 - x^2 = b $$
+$$   x^2 = d^2 - b $$
+$$   x = \sqrt{d^2 - b}$$</p>
+<p>And just like that, we were able to find the roots of the equation without any the aid of any formulas. Let&rsquo;s deploy our method to observe how it works out.</p>
+<p><strong>Q) Solve \(x^2 - 6x + 25 = 0\)</strong></p>
+<p>We first compute \(d = -\frac{a}{2} = -(-6/2) = 3\). Hence our roots are \(3+ x\) and \(3-x\).</p>
+<p>$$(3+x)(3-x) = 25$$
+$$x^2 = 9 -26$$
+$$x^2 = -16$$
+$$x = \pm 4i$$</p>
+<p>Hence our roots are \(3+4i\) and \(3-4i\).</p>
 
     </div>
     <div class="post-footer">

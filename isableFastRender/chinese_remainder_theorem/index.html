@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+    <title>The Chinese Remainder Theorem // Udit Narayan</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Udit" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://localhost:1313/css/main.min.edc866162a0c1d7fb06bf4931a94a7b7311311fae934b34f7d0bb1ee8a506b0a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Chinese Remainder Theorem"/>
+<meta name="twitter:description" content="This is a famous theorem in elementary number theory which is suited to answer a specific type of question whose first appearance was seen in Chinese literature, and hence the name Chinese Remainder Theorem. The question asks - &ldquo;Find the positive integers which give remainders \(a_1, a_2, a_3, a_4\) when divided by \(n_1, n_2, n_3, n_4\) respectively.&rdquo; We first derive the mathematical tools required to tackle the problem.
+Linear Congruences As the name suggests, we deal with congruences such as \(ax \equiv b \ (mod \ n) \)."/>
+
+    <meta property="og:title" content="The Chinese Remainder Theorem" />
+<meta property="og:description" content="This is a famous theorem in elementary number theory which is suited to answer a specific type of question whose first appearance was seen in Chinese literature, and hence the name Chinese Remainder Theorem. The question asks - &ldquo;Find the positive integers which give remainders \(a_1, a_2, a_3, a_4\) when divided by \(n_1, n_2, n_3, n_4\) respectively.&rdquo; We first derive the mathematical tools required to tackle the problem.
+Linear Congruences As the name suggests, we deal with congruences such as \(ax \equiv b \ (mod \ n) \)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/chinese_remainder_theorem/" />
+<meta property="article:published_time" content="2020-04-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-13T00:00:00+00:00" />
+
+
+
+    
+    <html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Katex 0.11.1</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+</html>
+    
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/avatar.jpg" alt="Udit" /></a>
+      <h1>Udit Narayan</h1>
+      <p>I am a high-school student interested in Math.</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/Isocyanide" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://t.me/WeirdIndianBoi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">The Chinese Remainder Theorem</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Apr 13, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>This is a famous theorem in elementary number theory which is suited to answer a specific type of question whose first appearance was seen in Chinese literature, and hence the name Chinese Remainder Theorem. The question asks - &ldquo;Find the positive integers which give remainders \(a_1, a_2, a_3, a_4\) when divided by \(n_1, n_2, n_3, n_4\) respectively.&rdquo; We first derive the mathematical tools required to tackle the problem.</p>
+<h3 id="linear-congruences">Linear Congruences</h3>
+<p>As the name suggests, we deal with congruences such as \(ax \equiv b \ (mod \ n) \). However it&rsquo;s just a fancy notation for \(ax - b = ny\) or \(ax -ny = b\) where \(y\) is an arbitrary integer. This reduces to a linear Diophantine equation, which has solutions in the form of an arithmetic progression.<br>
+\(x = x_0 + \frac{n}{d}t\) where \(x_0\) is any solution, \(d = gcd(a,n)\) and \(t\) is an arbitrary integer.<br>
+We are only interested in the solutions in-congruent to \(n\). For example, for n = 7, if \(x=3\) satisfies, that is, \(3a \equiv b \ (mod \ 7)\) that implies \(x = 10 \equiv 3 \ (mod \ 7)\) also satisfies the same. The point here is that \(x=3, 10, 17, 24\) etc are the same solution as \(x \equiv 3\). Hence all the solutions can be reduced to one of the residues modulo \(n = (0,1,2..n-1)\).</p>
+<p>We argue that there are exactly \(d = gcd(a,n)\) in-congruent solutions. Consider,</p>
+<p>$$ x_0, x_0 + \frac{n}{d}, x_0 + 2\frac{n}{d}&hellip;x_0 + (d-1)\frac{n}{d} $$</p>
+<p>If any two of them were to be congruent, we would have, 
+$$    x_0 + i\frac{n}{d} \equiv x_0 + j\frac{n}{d} \ (mod \ n) $$
+$$    i\frac{n}{d} \equiv j\frac{n}{d} \ (mod \ n) $$
+$$    i \equiv j \ (mod \ n/gcd(n,\frac{n}{d})) $$
+$$    i \equiv j \ (mod \ d) $$</p>
+<p>We know that the last statement is impossible. Now lets consider an arbitrary solution of \(x\) where \(t = qd + r\) and \(r&lt;d\). We have</p>
+<p>$$    x_0 + \frac{n}{d}t \equiv x_0 + \frac{n}{d}(qd+r)\equiv x_0 + nq + \frac{n}{d}r $$
+$$  \equiv x_0 + \frac{n}{d}r $$</p>
+<p>Where \(r&lt;d\) which is one of our selected \(d\) solutions. So we have proved that \(ax \equiv b \ (mod \ n)\) has \(d = gcd(a.n)\) mutually in-congruent solutions.</p>
+<h3 id="chinese-remainder-theorem">Chinese Remainder Theorem</h3>
+<p>Let \(n_1, n_2&hellip;n_r\) be positive integers that \(gcd(n_i, n_j) = 1\) for \(i \neq j\). Then the system of linear congruences : \(x \equiv a_1 \ (mod \ n_1), x \equiv a_2 \ (mod \ n_2)&hellip;..x \equiv a_r \ (mod \ n_r)\) admits a simultaneous solution, unique modulo to the integer \(n = n_1n_2&hellip;n_r\)</p>
+<p>We start by assigning \(N_i = \frac{n}{n_i} = n_1..n_{i-1}n_{i+1}..n_r\). Since all the \(n\)&lsquo;s are relatively prime, \(gcd(N_k, n_k) = 1\). By the theory of linear congruences, we know that the congruence \(N_kx \equiv 1 \ (mod \ 1)\) admits \(d=1\), that is, a unique solution. Let&rsquo;s call it \(x_k\). Consider the integer:</p>
+<p>$$  N = a_1N_1x_1 + a_2N_2x_2 + &hellip; a_rN_rx_r $$</p>
+<p>We argue that this integer is the required solution. Indeed, \(N_k \equiv 0 \ (mod \ n_i)\) for \(k \neq i\) as \(N_k\) contains a \(n_i\) factor. Hence we only need to consider \(N \equiv a_kN_kx_k \ (mod \ n)\). By our selection of \(x_k\) we know that \(N_kx_k \equiv 1 \ (mod \ 1) \implies a_kN_kx_k \equiv a_k \equiv N \ (mod \ n_k)\) which was to be proved.</p>
+<p>All that&rsquo;s left is to prove that it is unique modulo \(n_1n_2&hellip;n_r\). Let \(x_1\) and \(x_2\) be two simultaneous solutions. 
+$$ x_1 \equiv a_1 \equiv x_2 \ (mod \ n_1) $$
+$$    .   $$
+$$. $$
+$$ x_1 \equiv a_r \equiv x_2 \ (mod \ n_r) $$
+Putting all of them together yields \(x_1 \equiv x_2 \ (mod \ n_1n_2&hellip;n_r)\). Now we have proved both the aspects of the theorem and the job is done!</p>
+<p>Here a problem to solve using the theorem : When eggs in a basket are removed \(2,3,4,5,6\) at a time there remain, respectively \(1,2,3,4,5\) eggs. When they are taken out \(7\) at a time there are none left. Find the smallest number of eggs there could have been in the basket.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
